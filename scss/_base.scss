@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colores 
+Cuerpo: #fbe4ed
+Fondo secciones: #d42d71
+bordes: #c8c8c8
+card color: #fbe4ed
+*/
+
+
+body{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: $bg-body;
+    display: grid;
+    /* areas */
+    grid-template-areas:
+    'header header header'
+    'slider slider slider'
+    'titulo titulo titulo'
+    'prod prod prod'
+    'redes redes redes'
+    'pie pie pie';
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="shortcut icon" href="../img/logo redondo.jpg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="cabecera">
+        <nav class="navbar navbar-expand-lg  ">
+            <div class="container-fluid  d-flex align-items-end  ">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="../img/Logo Nos sin fondo.png" alt="Logo NS Belleza en tu piel" width="170px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/marcas.html">Marcas</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="../pages/maquillaje.html">Maquillaje</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active " href="../pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " href="../pages/que tipo de piel tengo.html">¿Tipo de piel?</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Escribe aquí" aria-label="Search">
+                    <button class="btn btn-secondary" type="submit">Buscar</button>
+                </form>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <!-- fin header -->
+
+    <!--formulario -->
+    <main class="maincont">
+        <form class="form" action="enviar.php" method="post" enctype="text/plain">
+            <fieldset>
+                <legend>Datos</legend>
+            <div>
+                <label for="">Nombre completo</label>
+                <input type="text" required placeholder="Nombre y apellido"> 
+            </div>
+            <div>
+                <label for="Correo">Correo</label>
+                <input type="mail" required placeholder="Ingrese su email"> 
+
+            </div>
+            <div>
+                <label for="">Teléfono</label>
+                <input type="number" required placeholder="Ingrese su teléfono"> 
+            </div>
+            <div>
+                <label for="">Consulta</label>
+                <textarea name="consulta" placeholder="Dejanos tu consulta" id="consulta" cols="30" rows="4"></textarea>
+            </div>
+            <div>
+                <input type="submit">
+                <input type="reset" value="Limpiar"> 
+
+            </div>
+            <input type="checkbox">
+            <label for="">Quiero recibir novedades por mail</label>
+            </fieldset>
+            
+        </form>
+
+    <!-- Fin formulario -->
+
+    <!-- mapa -->
+        <Section class="map">
+            <h3>Conoce nuestro local</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11872.914039518448!2d-64.26796655390409!3d-27.7839488635521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b52116541bda1%3A0x63357d1eff4af526!2sPlaza%20Libertad%20Santiago%20del%20Estero!5e0!3m2!1ses-419!2sar!4v1653538564865!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </Section>
+    <!-- fin mapa -->
+    </main>
+
+    <!-- banner instagram -->
+        <div class="banner" >
+            <div>
+                <img src="../img/icono insta.png" alt="icono instagram">
+            </div>
+            <div class="insta">
+                <p>Seguinos en instagram</p>
+                <h3>@NS.Bellezaentupiel</h3>
+            </div>
+        </div>
+        <!-- fin banner instagram -->
+    </section>
+
+    <footer class=" container-fluid " >
+        <div class="row p-5 text-white d-flex justify-content-around">
+            <div class="col-xs-12 col-md-6 col-lg-3 pb-5">
+                <p class="h5 mb-3">Navegacion</p>
+                <div class="mb-2" >
+                    <a class="text-white text-decoration-none" href="../index.html">Inicio</a></li>
+                </div>
+                <div class="mb-2" >
+                    <a class="text-white text-decoration-none" href="../pages/marcas.html">Marcas</a></li>
+                </div>
+                <div class="mb-2" >
+                    <a class="text-white text-decoration-none" href="../pages/maquillaje.html">Maquillaje</a></li>
+                </div>
+                <div class="mb-2" >
+                    <a class="text-white text-decoration-none" href="../pages/contacto.html">Contacto</a></li>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-md-6 col-lg-3 pb-5">
+                <p class="h5 mb-3">Medios de pago</p>
+                <div class="mb-2" >
+                    <a class="text-white text-decoration-none" href="#">Deposito o transferencia</a></li>
+                </div>
+                <div class="mb-2" >
+                    <a class="text-white text-decoration-none" href="#">Mercado Pago</a></li>
+                </div>
+                <div class="mb-2" >
+                    <a class="text-white text-decoration-none" href="#">Efectivo</a></li>
+                </div>
+            </div>
+            
+            <div class="col-xs-12 col-md-6 col-lg-3 ">
+                <p class="h5 mb-3">Redes sociales</p>
+                <div class="mb-2" >
+                    <a class="text-white text-decoration-none" href="https://www.facebook.com/Noelia-Sajama-cosmetologa-373849886074698">facebook</a></li>
+                </div>
+                <div class="mb-2" >
+                    <a class="text-white text-decoration-none" href="https://instagram.com/noelia.sajama_cosmetologa?igshid=YmMyMTA2M2Y=">instagram</a></li>
+                </div>
+                <div class="mb-2" >
+                    <a class="text-white text-decoration-none" href="https://www.youtube.com/">youtube</a></li>
+                </div>
+            </div>
+        </div>
+    </footer>    
+    <!-- fin pie de pagina -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

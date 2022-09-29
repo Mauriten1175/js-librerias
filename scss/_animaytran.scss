@@ -1,0 +1,22 @@
+
+/* animaciones y transiciones */
+
+.cabecera .navbar div ul li a:hover{
+    color:white;
+}
+
+.cabecera .bar ul li a:hover{
+    color: black;
+
+}
+
+@keyframes rotacion {
+    from{transform: rotateZ(0deg);}
+    
+    to{transform: rotateZ(360deg);}
+}
+
+header nav div a .logo{
+    animation-name: rotacion;
+    animation-duration: 1.5s;
+}

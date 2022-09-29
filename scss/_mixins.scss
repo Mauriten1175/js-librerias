@@ -1,0 +1,13 @@
+@mixin varios($display, $pad-top, $alto, $just-cont){
+    display: $display;
+    padding-top: $pad-top;
+    height: $alto;
+    justify-content: $just-cont;
+    
+}
+
+@mixin haches($txta, $txtt, $fontf){
+    text-align: $txta;
+    text-transform: $txtt;
+    font-family: $fontf;
+}

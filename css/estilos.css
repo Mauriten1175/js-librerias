@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Colores 
+Cuerpo: #fbe4ed
+Fondo secciones: #d42d71
+bordes: #c8c8c8
+card color: #fbe4ed
+*/
+body {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #fbe4ed;
+  display: grid;
+  /* areas */
+  grid-template-areas: "header header header" "slider slider slider" "titulo titulo titulo" "prod prod prod" "redes redes redes" "pie pie pie";
+}
+
+/* animaciones y transiciones */
+.cabecera .navbar div ul li a:hover {
+  color: white;
+}
+
+.cabecera .bar ul li a:hover {
+  color: black;
+}
+
+@keyframes rotacion {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+header nav div a .logo {
+  animation-name: rotacion;
+  animation-duration: 1.5s;
+}
+
+.cuerpo div ul li a {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.cabecera {
+  grid-area: header;
+  border: solid 1px #c8c8c8;
+  /* height: auto; */
+  width: 100%;
+  background-color: #d42d71;
+}
+
+.container {
+  grid-area: slider;
+  /* border: solid 1px #c8c8c8; */
+  background-color: #d42d71;
+}
+
+.titulo {
+  height: auto;
+  width: 100%;
+  grid-area: titulo;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid 1px #c8c8c8;
+  border-top: none;
+  /* border: solid 1px black; */
+}
+.titulo h2 {
+  text-align: center;
+  padding: 15px 0 5px 0;
+  /* border: solid 1px black; */
+}
+.titulo .descripcion {
+  text-align: center;
+  padding: 0 0px 10px 0px;
+  width: 100%;
+  text-transform: none;
+  font-size: 16px;
+  /* border: solid 1px black; */
+}
+
+.productos {
+  background-color: #d42d71;
+  grid-area: prod;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* border: solid 1px black; */
+  padding-top: 10px;
+}
+
+.card {
+  background-color: #fbe4ed;
+  margin: 10px 25px;
+  cursor: default;
+  transition: all 400ms ease;
+}
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translate(1%, -1%);
+}
+.card img {
+  border: solid 1px #c8c8c8;
+}
+.verCarrito{
+  width: 100%;
+}
+
+.verCarrito div{
+  width: 80%;
+
+}
+
+.verCarrito h3{
+  padding-left: 10px;
+  color: rgb(133, 16, 117);
+}
+
+.verCarrito p{
+  padding-left: 10px;
+  font-size:large;
+}
+
+.btnMenos{
+  padding: 1px 2px;
+}
+.btnVaciar,.btnComprar{
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Banner instagram */
+.banner {
+  grid-area: redes;
+  border: solid 1px #c8c8c8;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 20px 0 20px 0;
+}
+.banner div img {
+  height: 50px;
+  width: 50px;
+  /* padding: 10px 0 5px 48%;     */
+}
+.banner .insta p {
+  padding-left: 10px;
+}
+
+footer {
+  grid-area: pie;
+  border-top: solid 1px #c8c8c8;
+  background-color: #d42d71;
+}
+
+.maincont {
+  grid-area: prod;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #fbe4ed;
+  padding: 20px 0 0 20px;
+}
+.maincont .titulocont {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+}
+
+main div .titulocont {
+  align-self: center;
+}
+main .form {
+  padding: 3% 0;
+}
+main .form legend {
+  text-transform: uppercase;
+}
+main .form label {
+  width: auto;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+}
+
+.map {
+  padding: 3% 0;
+  background-color: #fbe4ed;
+}
+.map h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  padding: 10px;
+  font-size: larger;
+}
+
+.cuerpo h3 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-left: 20px;
+}
+.cuerpo div ul li {
+  padding: 5px 0 0 20px;
+}
+.cuerpo div ul li .check {
+  font-family: "Montserrat", sans-serif;
+  padding: 2px 0 2px 0;
+}
+
+.productos div ul li {
+  list-style: none;
+}
+.productos div ul li a {
+  text-decoration: none;
+  color: black;
+}
+.productos div h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding: 10px 0 2px 10px;
+}
+
+main .marca ul li {
+  list-style: none;
+}
+main .marca ul li a {
+  text-decoration: none;
+}
+
+.cuerpo {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+}
+.cuerpo .contenedor {
+  display: flex;
+  padding-top: 15px;
+  height: fit-content;
+  justify-content: space-around;
+}
+.cuerpo .contenedor .cards {
+  height: fit-content;
+  /* border:  solid 1px black; */
+}
+.cuerpo .contenedor .cards img {
+  background-size: cover;
+}
+
+.cuerpo .marca, .acces {
+  padding-top: 15px;
+}
+
+.tipopiel {
+  width: 100%;
+}
+.tipopiel h1, .tipopiel h2 {
+  width: 100%;
+  font-family: "Montserrat" sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0 10px 30%;
+}
+.tipopiel h1 {
+  font-weight: 600;
+}
+.tipopiel h2 {
+  font-weight: 500;
+}
+.tipopiel p {
+  font-family: "Montserrat" sans-serif;
+  text-align: center;
+  font-weight: 400;
+  padding: 10px 0 10px 30%;
+}
+.tipopiel p span {
+  font-family: "Montserrat" sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=estilos.css.map */

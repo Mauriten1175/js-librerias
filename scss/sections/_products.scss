@@ -1,0 +1,28 @@
+.productos{
+    background-color: $bg-secciones; ;
+    grid-area: prod;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: solid 1px black; */
+    padding-top: 10px;
+}
+
+.card{
+    background-color: $card-color;
+    margin: 10px 25px;
+    cursor:default;
+    transition: all 400ms ease;
+
+    &:hover{
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+        transform: translate(1%,-1%)
+        /* transform: translate(2%); */
+    }
+    img{
+        border: $bordes ;
+    }
+}
+
+
+

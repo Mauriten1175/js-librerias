@@ -1,0 +1,31 @@
+
+.tipopiel{
+    width: 100%;
+    h1,h2 {
+        width: map-get($textos,w-text);
+        font-family: map-get($textos,f-text);
+        text-transform: map-get($textos, t-transf );
+        text-align: map-get($textos,t-align);
+        padding:map-get($textos ,pad-text);
+    
+    }
+    h1{
+        font-weight: map-get($textos,f-w-600);
+    }
+
+    h2{        
+        font-weight: map-get($textos,f-w-500);
+    }
+    p{
+        font-family: map-get($textos,f-text);
+        text-align: map-get($textos,t-align); 
+        font-weight: 400;
+        padding:map-get($textos ,pad-text);
+        span{
+            font-family: map-get($textos,f-text);
+            text-transform: map-get($textos, t-transf );
+            font-weight: map-get($textos,f-w-600);
+            font-weight: bold;
+        }
+    }
+}

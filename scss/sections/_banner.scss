@@ -1,0 +1,25 @@
+/* Banner instagram */
+.banner{
+    grid-area: redes;
+    border: $bordes;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 20px 0 20px 0;
+
+    div{
+        img{
+        height: 50px;
+        width: 50px;
+        /* padding: 10px 0 5px 48%;     */
+        }
+    }
+    .insta{
+        p{
+        padding-left: 10px;
+    }
+    } 
+}
+
+

@@ -1,0 +1,26 @@
+
+.titulo{
+    height: auto;
+    width: 100%;
+    grid-area: titulo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border:$bordes;
+    border-top: none;
+    /* border: solid 1px black; */
+    
+    h2{
+        text-align: center;
+        padding: 15px 0 5px 0;
+        /* border: solid 1px black; */
+    }
+    .descripcion{
+        text-align: center; 
+        padding: 0 0px 10px 0px;
+        width: 100%;
+        text-transform:none ;
+        font-size: 16px;
+        /* border: solid 1px black; */
+    }
+}

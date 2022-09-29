@@ -1,0 +1,45 @@
+.maincont{
+    grid-area: prod ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-evenly;
+    background-color: #fbe4ed;
+    padding: 20px 0 0 20px;
+    .titulocont{
+        @include haches(center, uppercase,'Montserrat');
+        
+    }
+}
+
+main{
+    div{
+        .titulocont{
+            align-self: center;
+        }
+    }
+    .form{
+        padding: 3% 0;
+            legend{
+                text-transform: uppercase;
+            }
+            label{
+                width: auto;
+                font-family: 'Montserrat', sans-serif;
+                padding: 10px;
+            }
+    }
+    
+}
+
+
+.map{
+    padding: 3% 0;
+    background-color: #fbe4ed;
+    h3{
+        @include haches(center, uppercase,'Montserrat');
+        padding: 10px;
+        font-size: larger;
+    }
+    
+}
